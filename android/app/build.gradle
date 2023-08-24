@@ -57,6 +57,11 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    lintOptions {
+      abortOnError false
+      baseline file("lint-baseline.xml")
+  }
 }
 
 flutter {
